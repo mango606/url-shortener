@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb-test
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+
+  cache:
+    type: simple
+
+logging:
+  level:
+    com.urlshortener: INFO
+    org.springframework.web: WARN
+    org.hibernate.SQL: WARN
